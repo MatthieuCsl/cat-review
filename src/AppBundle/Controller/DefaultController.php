@@ -18,25 +18,5 @@ class DefaultController extends Controller
             'Shiva',
             'Thalie',
         ];
-        
-        $listHtml = '';
-        
-        foreach ($cats as $cat) {
-            $listHtml .= '<li>'.strtoupper($cat).'</li>';
-        }
-        
-        $html = "
-            <html>
-                <head></head>
-                <body>
-                    <h1>Liste des chats</h1>
-                    <ul>
-                        $listHtml
-                    </ul>
-                </body>
-            </html>
-        ";
-        
-        print $html;
     }
 }
