@@ -12,14 +12,7 @@ class DefaultController extends Controller
      * @Route("/", name="homepage")
      */
     public function indexAction(Request $request)
-    {
-        $cats = [
-            'Frifrou',
-            'Shiva',
-            'Thalie',
-            'Lénou',
-        ];
-        
+    {    
         return $this->render('default/index.html.twig', [
             'base_dir' => "on s'en fout",
         ]);
