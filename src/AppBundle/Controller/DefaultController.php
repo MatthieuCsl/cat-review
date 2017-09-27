@@ -18,5 +18,9 @@ class DefaultController extends Controller
             'Shiva',
             'Thalie',
         ];
+        
+        return $this->render('default/index.html.twig', [
+            'base_dir' => "on s'en fout",
+        ]);
     }
 }
