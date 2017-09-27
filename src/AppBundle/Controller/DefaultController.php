@@ -17,6 +17,7 @@ class DefaultController extends Controller
             'Frifrou',
             'Shiva',
             'Thalie',
+            'Lénou',
         ];
         
         return $this->render('default/index.html.twig', [
